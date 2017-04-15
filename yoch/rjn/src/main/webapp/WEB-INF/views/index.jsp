@@ -1,41 +1,40 @@
 <html lang="en">
-<%@ taglib prefix="security"
-	uri="http://www.springframework.org/security/tags"%>
-<head>
-<%@include file="common/meta.jsp"%>
-<title>RJN</title>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<head>   
+    <%@include file="common/meta.jsp"%>
+    <title>RJN</title>
 </head>
 <body>
-	<main class="main-contents"> <%@ taglib
-		uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-	<div class="text-center"></div>
-	<div class="container">
-		<br> <br> <br> <br> <br> <br>
-		<form action="${rc.getContextPath()}/search"
-			class="row form-horizontal">
+<%@include file="header/application_header.jsp"%>
+<main class="main-contents">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<div class="text-center"></div>
+<div class="container">
+	<br> <br> <br> <br> <br> <br>
+	<form action="${rc.getContextPath()}/search"
+		class="row form-horizontal">
 
-			<div class="col-xs-12 col-md-4">
-				<select name="cityId" class="form-control">
-					<c:forEach items="${cityList}" var="thisCity">
-						<option value="${thisCity.id}">${thisCity.city}</option>
-					</c:forEach>
-				</select>
-			</div>
+		<div class="col-xs-12 col-md-4">
+			<select name="cityId" class="form-control">
+				<c:forEach items="${cityList}" var="thisCity">
+				    <option value="${thisCity.id}">${thisCity.city}</option>
+				</c:forEach>
+			</select>
+		</div>
 
-			<div class="col-xs-12 col-md-4">
-				<input class="form-control" name="thisProduct" />
-			</div>
-			<div class="col-xs-12 col-md-2">
-				<button type="submit" class="btn btn-default">
-					<i class="fa fa-search"></i> Search
-				</button>
-			</div>
-		</form>
-		<br> <br>
-	</div>
-
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
+		<div class="col-xs-12 col-md-4">
+			<input class="form-control" name="thisProduct" />
+		</div>
+		<div class="col-xs-12 col-md-2">
+			<button type="submit" class="btn btn-default">
+				<i class="fa fa-search"></i> Search
+			</button>
+		</div>
+	</form><br><br>
+</div>
+    
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Application</title>
 <meta name="viewport"
@@ -54,8 +53,7 @@
 <meta property="og:title"
 	content="One page website template for multipurpose website" />
 <!---Common css---->
-<link href="${rc.getContextPath()}/resources/UI/css/common.css"
-	rel="stylesheet" type="text/css" />
+<link href="${rc.getContextPath()}/resources/UI/css/common.css" rel="stylesheet" type="text/css" />
 <!----Media queries css--->
 <link href="${rc.getContextPath()}/resources/UI/css/style.css"
 	type="text/css" rel="stylesheet" />
@@ -468,8 +466,7 @@
 									style="color: rgb(216, 24, 24); font-size: 20px;"></i>By
 							</div>
 							<div class="col-4 footer-logo">
-								<img src="${rc.getContextPath()}/resources/UI/image/iislogo.png"
-									style="" />
+								<img src="${rc.getContextPath()}/resources/UI/image/iislogo.png" style="" />
 							</div>
 						</div>
 					</div>
@@ -478,28 +475,27 @@
 		</section>
 	</div>
 	<script type="text/javascript">
-		thumb_slider({
+        thumb_slider({
 
-			thumbs_to_show : 1,
-			thumbs_to_move : 1,
-			thumbs_width : 0,
-			thumbs_count : 0,
-			timeout : 10000,
-			parent_id : "main_slider",
-			container_class : "thumb_slider",
-			thumb_class : "thumbs",
-			spacing : 0,
-			processing : false,
-			hover : false,
-			next_class : "next",
-			prev_class : "prev",
-			timer : setTimeout(function() {
-			})
-		});
-	</script>
+            thumbs_to_show: 1,
+            thumbs_to_move: 1,
+            thumbs_width: 0,
+            thumbs_count: 0,
+            timeout: 10000,
+            parent_id: "main_slider",
+            container_class: "thumb_slider",
+            thumb_class: "thumbs",
+            spacing: 0,
+            processing: false,
+            hover: false,
+            next_class: "next",
+            prev_class: "prev",
+            timer: setTimeout(function () { })
+        });
+    </script>
 </body>
-	</html>
-	</main>
+</html>
+</main>
 </body>
 <%@include file="footer/application_footer.jsp"%>
 </html>
