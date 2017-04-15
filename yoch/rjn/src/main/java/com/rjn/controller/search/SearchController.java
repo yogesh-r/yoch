@@ -3,17 +3,14 @@ package com.rjn.controller.search;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.rjn.bean.SearchBean;
 import com.rjn.service.SearchService;
-import com.rjn.service.VendorService;
 import com.rjn.service.Core.ApplicationUtils;
 import com.rjn.utils.Constant;
 
@@ -25,8 +22,6 @@ public class SearchController {
 	@Autowired  
 	private SearchService searchService;
 	
-	@Autowired
-	private VendorService vendorService; 
 	
 	@Autowired 
 	private ApplicationUtils applicationUtils;

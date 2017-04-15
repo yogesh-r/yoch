@@ -1,16 +1,14 @@
-package com.rjn.service.impl;
+ package com.rjn.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.rjn.dao.BusinessEnquiryDao;
-import com.rjn.dao.PasswordResetTokenDao;
-import com.rjn.dao.ProfileMasterDao;
+import com.rjn.dao.CandidateProfileDao;
 import com.rjn.dao.core.AccountDao;
+import com.rjn.dao.core.PasswordResetTokenDao;
 import com.rjn.model.Account;
-import com.rjn.model.BusinessEnquiry;
 import com.rjn.model.PasswordResetToken;
-import com.rjn.model.CustomerProfile;
+import com.rjn.model.CandidateProfile;
 import com.rjn.service.HeaderService;
 import com.rjn.utils.Constant;
 
@@ -19,45 +17,32 @@ import com.rjn.utils.Constant;
 public class HeaderServiceImpl implements HeaderService  { 
 
 	@Autowired
-	private ProfileMasterDao profileMasterdao;
+	private CandidateProfileDao candidateProfiledao;
 	
 	@Autowired
 	private AccountDao accountDao;
 
 	@Autowired
-	private BusinessEnquiryDao listDao;
-	
-	@Autowired
 	private PasswordResetTokenDao passwordResetTokenDao;
 
 	@Override
-	public void saveMemberRegistration(CustomerProfile profileMaster) {
-		profileMasterdao.saveMemberRegister(profileMaster);
+	public void saveCandidateRegistration(CandidateProfile candidateMaster) {
+		candidateProfiledao.saveCandidateRegister(candidateMaster);
 		Account account = new Account();
-		account.setMy_user_name(profileMaster.getContactEmailId());
-		account.setPassword(profileMaster.getPassword()); 
-		account.setReg_id(profileMaster.getProfileNumber());
-		accountDao.save(account, Constant.ROLE_MEMBER);
+		account.setMy_user_name(candidateMaster.getContactEmailId());
+		account.setPassword(candidateMaster.getPassword()); 
+		account.setReg_id(candidateMaster.getProfileNumber());
+		accountDao.save(account, Constant.ROLE_CANDIDATE);
 	}
 
 	@Override
-	public void saveListYourOffice(BusinessEnquiry listYourSpace) {
-		listDao.saveListYourOffice(listYourSpace);
+	public CandidateProfile getCandidateProfileByEmail(String contactEmailId) {
+		return candidateProfiledao.getCandidateProfileByEmail(contactEmailId);
 	}
 
 	@Override
-	public BusinessEnquiry getBusinessEnquiryByEnquiryId(String enquiryId) {
-		return listDao.getBusinessEnquiryByEnquiryId(enquiryId); 
-	}
-
-	@Override
-	public CustomerProfile getProfileMasterByEmail(String contactEmailId) {
-		return profileMasterdao.getProfileMasterByEmail(contactEmailId);
-	}
-
-	@Override
-	public void saveToken(CustomerProfile profileMaster, String token) {
-		 passwordResetTokenDao.saveToken(profileMaster, token);
+	public void saveToken(CandidateProfile candidateProfile, String token) {
+		 passwordResetTokenDao.saveToken(candidateProfile, token);
 	}
 
 	@Override

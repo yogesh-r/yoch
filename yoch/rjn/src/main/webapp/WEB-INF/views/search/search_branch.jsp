@@ -37,9 +37,9 @@
 		<c:set var="searchUrl" value="${rc.getContextPath()}/vendor/search" />
 		<%@include file="../header/vendor_header.jsp"%>
 	</c:when>
-	<c:when test="${headerType eq  'ROLE_MEMBER'}">
+	<c:when test="${headerType eq  'ROLE_CANDIDATE'}">
 		<c:set var="searchUrl" value="${rc.getContextPath()}/member/search" />
-		<%@include file="../member/member_header.jsp"%>
+		<%@include file="../candidate/candidate_header.jsp"%>
 	</c:when>
 	<c:otherwise>
 		<c:set var="searchUrl" value="${rc.getContextPath()}/search" />
@@ -79,7 +79,7 @@
 		<%--
 				<c:forEach items="${results}" var="thisResult">
 					<c:choose>
-						<c:when test="${headerType eq 'ROLE_ADMIN' || headerType eq 'ROLE_VENDOR' || headerType eq 'ROLE_MEMBER'}">
+						<c:when test="${headerType eq 'ROLE_ADMIN' || headerType eq 'ROLE_VENDOR' || headerType eq 'ROLE_CANDIDATE'}">
 							<li><a href="${rc.getContextPath()}/vendor-profile/${thisResult.vendorId}">${thisResult.vendorName}</a></li>
 						</c:when>
 						<c:otherwise>

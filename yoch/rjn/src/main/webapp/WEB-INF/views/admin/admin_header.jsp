@@ -50,12 +50,6 @@
 		href="#dashboard-menu"><i class="icon-dashboard"></i>Menu</a>
 	<ul class="nav nav-list collapse in" id="dashboard-menu"
 		style="height: 246px;" aria-expanded="true">
-		<li><a href="${rc.getContextPath()}/admin/product-category-list">Category</a></li>
-		<li><a
-			href="${rc.getContextPath()}/admin/vendor-list">Vendors</a></li>
-		<li><a href="${rc.getContextPath()}/admin/branch-list">Branches</a></li>
-		<li><a href="${rc.getContextPath()}/admin/leads">Leads</a></li>
-		<li><a href="${rc.getContextPath()}/admin/enquiry-list">Enquiry List</a></li>		
 		<li><a href="#">Profile</a></li>
 		<li><a href="${rc.getContextPath()}/admin/change-password">Change Password</a></li>
 	</ul>

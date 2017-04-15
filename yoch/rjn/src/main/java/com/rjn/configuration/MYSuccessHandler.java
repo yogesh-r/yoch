@@ -38,15 +38,15 @@ public class MYSuccessHandler implements AuthenticationSuccessHandler {
  
 	protected String determineTargetUrl(Authentication authentication, String pageName, String searchKeyWord){
         Set<String> authorities = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
+        
+        System.out.println("authorities >>>>> "+authorities);
         if (authorities.contains(Constant.ROLE_ADMIN)) {
         	return "/admin/home";
-        } else if (authorities.contains(Constant.ROLE_VENDOR)) {
-        	return "/vendor/home";
-        } else if (authorities.contains(Constant.ROLE_MEMBER)) {
+        } else if (authorities.contains(Constant.ROLE_CANDIDATE)) {
         	if (pageName != null) {
-        		return "/member/search?thisProduct="+searchKeyWord;
+        		return "/candidate/search?thisProduct="+searchKeyWord;
         	} else {
-        		return "/member/home";
+        		return "/candidate/home";
         	}
         } else {
             throw new IllegalStateException();

@@ -57,7 +57,7 @@
 	                    </ul>
 	                    <ul class="nav navbar-nav navbar-actions navbar-right">
 		                    <li><a href="" data-toggle="modal" data-target="#myModal" >Login</a></li>
-		                    <li><a href="${rc.getContextPath()}/member/register">Customer regestration</a></li>
+		                    <li><a href="${rc.getContextPath()}/candidate/register">Candidate regestration</a></li>
 		                </ul>
 	                </div><!--/.nav-collapse -->
 	            </div><!--/.row -->

@@ -17,12 +17,6 @@ public class SearchServiceImpl implements SearchService {
 	@Autowired
 	private SearchDao dao;
 
-	@Override
-	public List<SearchBean> findBranches(SearchBean searchBean) {
-		return dao.findBranches(searchBean); 
-	}
-
-	@Override
 	public List<SearchBean> findVendors(SearchBean bean) {
 		return dao.findVendors(bean); 
 	}

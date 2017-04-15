@@ -21,10 +21,10 @@ import org.springframework.web.servlet.view.JstlView;
 import com.rjn.filter.LoggingInterceptor;
 import com.rjn.filter.TransactionInterceptor;
 
-@Configuration 
+@Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.rjn")
-@EnableScheduling
+@EnableScheduling 
 public class AppConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public ViewResolver viewResolver() {

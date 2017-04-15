@@ -5,12 +5,12 @@ public class Constant {
 	public static final String ROLE_ADMIN = "ROLE_ADMIN";
 	public static final String ROLE_USER = "ROLE_USER";
 	public static final String ROLE_VENDOR = "ROLE_VENDOR";
-	public static final String ROLE_MEMBER = "ROLE_MEMBER";
+	public static final String ROLE_CANDIDATE = "ROLE_CANDIDATE";
 	
 	// constant for security config
 	public static final String ADMIN = "ADMIN";
 	public static final String VENDOR = "VENDOR";
-	public static final String MEMBER = "MEMBER";
+	public static final String CANDIDATE = "CANDIDATE";
 	
 	// constant for sequence
 	public static final String CUSTOMER = "CREG";

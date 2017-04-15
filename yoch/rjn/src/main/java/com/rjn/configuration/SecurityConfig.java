@@ -35,12 +35,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		web.ignoring().antMatchers("/why-us");
 		web.ignoring().antMatchers("/how-it-work");
 		web.ignoring().antMatchers("/contact-us");
-		web.ignoring().antMatchers("/member/register");
-		web.ignoring().antMatchers("/member/register/success");
+		web.ignoring().antMatchers("/candidate/register");
+		web.ignoring().antMatchers("/candidate/register/success");
 		web.ignoring().antMatchers("/about-us");
 		web.ignoring().antMatchers("/carrers");
 		web.ignoring().antMatchers("/privacy-policy");
-		web.ignoring().antMatchers("/member-policy");
 		web.ignoring().antMatchers("/terms-and-conditions");
 		web.ignoring().antMatchers("/space-provide-policy");
 		web.ignoring().antMatchers("/faq");
@@ -48,7 +47,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		web.ignoring().antMatchers("/suggestion");
 		web.ignoring().antMatchers("/list-your-shop");
 		web.ignoring().antMatchers("/search");
-		web.ignoring().antMatchers("/vendor-profile/**");
 		web.ignoring().antMatchers("/public/**");
 		web.ignoring().antMatchers("/forgetPassword/**");
 		web.ignoring().antMatchers("/header/change-password");
@@ -66,8 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.authorizeRequests()
 			.antMatchers("/admin/**").hasRole(Constant.ADMIN)
 			.antMatchers("/admin/**/").hasRole(Constant.ADMIN)
-			.antMatchers("/vendor/**").hasRole(Constant.VENDOR)
-			.antMatchers("/member/**").hasRole(Constant.MEMBER)
+			.antMatchers("/candidate/**").hasRole(Constant.CANDIDATE)
 				.anyRequest().authenticated()
 				.and()
 				
