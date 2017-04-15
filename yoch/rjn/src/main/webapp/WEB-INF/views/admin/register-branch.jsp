@@ -11,7 +11,6 @@
 					<c:otherwise>
 						<form action="${rc.getContextPath()}/admin/register-branch"
 							method="post" class="form-horizontal">
-							<%@include file="../common-jsp/add_branch.jsp"%>
 						</form>
 					</c:otherwise>
 				</c:choose>
