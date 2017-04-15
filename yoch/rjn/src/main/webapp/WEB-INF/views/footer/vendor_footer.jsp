@@ -1,1 +1,0 @@
-<%@include file="../include/js_include.jsp"%>

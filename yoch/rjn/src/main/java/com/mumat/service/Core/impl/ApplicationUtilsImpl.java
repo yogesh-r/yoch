@@ -9,9 +9,6 @@ import com.mumat.dao.core.AccountDao;
 import com.mumat.dao.core.CityDao;
 import com.mumat.model.Account;
 import com.mumat.model.core.City;
-import com.mumat.model.core.Menu;
-import com.mumat.model.core.ProductCategory;
-import com.mumat.model.core.VendorLead;
 import com.mumat.service.Core.ApplicationUtils;
 
 @Service
