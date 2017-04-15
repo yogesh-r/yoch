@@ -10,6 +10,7 @@
     <div class="container contact-page">
         <div>
             <h3>Contact Us</h3>
+            <h4>Coming soon</h4>
         </div>
     </div>
 </main>
