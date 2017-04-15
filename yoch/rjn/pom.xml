@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.rjn.mvc</groupId> 
-  <artifactId>rjn</artifactId>
+  <groupId>com.mumat.mvc</groupId> 
+  <artifactId>mumat</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
   
@@ -273,12 +273,12 @@
                     <version>2.4</version>
                     <configuration>
                         <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                        <warName>rjn</warName>
+                        <warName>mumat</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>rjn</finalName>
+        <finalName>mumat</finalName>
     </build>
 </project>
