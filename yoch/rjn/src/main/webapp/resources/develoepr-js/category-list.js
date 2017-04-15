@@ -1,4 +1,4 @@
-RJN.controller('categoryListCtrl', [ '$scope', '$http', 'fileUpload' , function ($scope, $http, fileUpload) {
+MUMAT.controller('categoryListCtrl', [ '$scope', '$http', 'fileUpload' , function ($scope, $http, fileUpload) {
 	
     $scope.uploadFile = function(){
         var file = $scope.myFile;

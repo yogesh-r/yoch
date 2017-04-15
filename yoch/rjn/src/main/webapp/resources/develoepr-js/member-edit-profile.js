@@ -2,7 +2,7 @@
  * Arnab
  */
 
-RJN.controller('memberEditProfileCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('memberEditProfileCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.thisProfile = [];
 	$scope.enableEdit = true;
 	$scope.displayAddForm = false;

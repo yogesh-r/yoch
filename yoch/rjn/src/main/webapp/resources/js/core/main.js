@@ -1,6 +1,6 @@
-var RJN = angular.module('RJN', []);
+var MUMAT = angular.module('MUMAT', []);
 
-RJN.directive('fileModel', ['$parse', function ($parse) {
+MUMAT.directive('fileModel', ['$parse', function ($parse) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -16,7 +16,7 @@ RJN.directive('fileModel', ['$parse', function ($parse) {
     };
 }]);
 
-RJN.service('fileUpload', ['$http', function ($http) {
+MUMAT.service('fileUpload', ['$http', function ($http) {
     this.uploadFileToUrl = function(file, uploadUrl){
         var fd = new FormData();
         fd.append('excelfile', file);

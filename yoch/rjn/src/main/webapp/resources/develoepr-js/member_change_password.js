@@ -1,7 +1,7 @@
 /**
  *Arnab 
  */
-RJN.controller('memberChangePasswordCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('memberChangePasswordCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.changePassword = {};
 	$scope.saveChangePassword = function() {
 		$http.post(_context + '/member/change-password',

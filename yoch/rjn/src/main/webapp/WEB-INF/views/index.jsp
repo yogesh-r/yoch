@@ -3,7 +3,7 @@
 	uri="http://www.springframework.org/security/tags"%>
 <head>
 <%@include file="common/meta.jsp"%>
-<title>RJN</title>
+<title>MUMAT</title>
 </head>
 <body>
 	<%@include file="header/application_header.jsp"%>

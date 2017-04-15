@@ -1,4 +1,4 @@
-RJN.controller('vendorBranchListCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('vendorBranchListCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.branchList = {};
 	$scope.vendorDetails = {};
 	$scope.thisBranch = {};

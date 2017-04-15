@@ -1,4 +1,4 @@
-RJN.controller('vendorEnquiryCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('vendorEnquiryCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.enquiryList = [];
 	$scope.startingPage = 0; 
 	$scope.totalRow = 0; 

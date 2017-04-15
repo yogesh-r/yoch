@@ -1,4 +1,4 @@
-RJN.controller('vendorEditProfileCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('vendorEditProfileCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.thisProfile = [];
 	$scope.enableEdit = true;
 	$scope.displayAddForm = false;

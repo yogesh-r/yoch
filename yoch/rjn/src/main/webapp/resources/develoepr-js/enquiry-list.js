@@ -1,7 +1,7 @@
 /**
  * Arnab
  */
-RJN.controller('enquiryListCtrl', [ '$scope', '$http' , function ($scope, $http){
+MUMAT.controller('enquiryListCtrl', [ '$scope', '$http' , function ($scope, $http){
 	$scope.enquiryList=[];
 	$scope.isLoadMore = true;
 	$scope.startingPage = 0; 

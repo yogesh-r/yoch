@@ -34,7 +34,7 @@
 <script type="text/javascript">
 	var _context = '${rc.getContextPath()}';
 </script>
-<body ng-app="RJN">
+<body ng-app="MUMAT">
 	<header>
 	    <nav class="navbar navbar-fixed-top">
 	        <div class="container">

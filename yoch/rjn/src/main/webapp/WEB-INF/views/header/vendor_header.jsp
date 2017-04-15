@@ -17,7 +17,7 @@
 	href="${rc.getContextPath()}/resources/css/angular-wizard.min.css">
 <link rel="stylesheet" type="text/css"
 	href="${rc.getContextPath()}/resources/css/application.css">
-<body ng-app="RJN">
+<body ng-app="MUMAT">
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -67,7 +67,7 @@
 
 
 <%-- <%@ taglib prefix="cc" uri="http://java.sun.com/jsp/jstl/core"%>
-<body onunload="bodyUnload();" Onclick="clicked=true;" ng-app="RJN">
+<body onunload="bodyUnload();" Onclick="clicked=true;" ng-app="MUMAT">
 	<div class="container">
 		<div class="pull-right">welcome ${sessionScope.uname}</div>
 	</div>

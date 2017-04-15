@@ -1,4 +1,4 @@
-RJN.controller('registerCategoryCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('registerCategoryCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	
 	// variable decelaration
 	$scope.thisCategory = {

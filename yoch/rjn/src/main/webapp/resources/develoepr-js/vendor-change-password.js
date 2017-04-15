@@ -1,4 +1,4 @@
-RJN.controller('vendorChangePasswordCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('vendorChangePasswordCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.changePassword = {};
 	/*$scope.displayAddForm = false;*/
 	

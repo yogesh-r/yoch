@@ -1,7 +1,7 @@
 /**
  * Arnab
  */
-RJN.controller('branchListCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('branchListCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.branchList = [];
 	$scope.editBranch = {};
 	$scope.displayAddForm = false;

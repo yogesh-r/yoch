@@ -1,4 +1,4 @@
-RJN.controller('adminLeadsCtrl', [ '$scope', '$http' , function ($scope, $http) {
+MUMAT.controller('adminLeadsCtrl', [ '$scope', '$http' , function ($scope, $http) {
 	$scope.leadList = {};
 	$scope.leadStatus = 'unread';
 	//$scope.change = $scope.selectItems[1];
